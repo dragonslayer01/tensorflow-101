@@ -60,7 +60,7 @@ for (x,y,w,h) in faces:
 	#	break
 plt.imshow(img, cmap = 'gray', interpolation = 'bicubic') 
 plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
-plt.imshow(img)
+plt.imshow()
 
 #kill open cv things		
 #cap.release()
