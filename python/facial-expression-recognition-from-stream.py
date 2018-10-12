@@ -20,7 +20,8 @@ emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 
 while(True):
 	#ret, img = cap.read()
-	ret,img = cv2.imread('tensorflow-101/python/bradley_angry.jpg')
+	img = cv2.imread('tensorflow-101/python/bradley_angry.jpg')
+	ret = True
 
 	#gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	if ret is True:
