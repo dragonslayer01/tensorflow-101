@@ -5,14 +5,14 @@ from keras.preprocessing import image
 #-----------------------------
 #opencv initialization
 
-face_cascade = cv2.CascadeClassifier('../haarcascades/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('..\\haarcascades/haarcascade_frontalface_default.xml')
 
 cap = cv2.VideoCapture(0)
 #-----------------------------
 #face expression recognizer initialization
 from keras.models import model_from_json
-model = model_from_json(open("../facial_expression_model_structure.json", "r").read())
-model.load_weights('../facial_expression_model_weights.h5') #load weights
+model = model_from_json(open("..\\facial_expression_model_structure.json", "r").read())
+model.load_weights('..\\facial_expression_model_weights.h5') #load weights
 
 #-----------------------------
 
