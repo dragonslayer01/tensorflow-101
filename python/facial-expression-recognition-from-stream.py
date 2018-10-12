@@ -22,7 +22,11 @@ while(True):
 	ret, img = cap.read()
 	#img = cv2.imread('C:/Users/IS96273/Desktop/hababam.jpg')
 
-	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	#gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	if ret is True:
+   		gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	else:
+   		continue
 
 	faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
