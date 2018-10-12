@@ -20,7 +20,7 @@ model.load_weights('tensorflow-101/python/facial_expression_model_weights.h5') #
 emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 
 	#ret, img = cap.read()
-img = cv2.imread('tensorflow-101/python/bradley_sad.jpg')
+img = cv2.imread('tensorflow-101/python/bradley_angry.jpg')
 ret = True
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
