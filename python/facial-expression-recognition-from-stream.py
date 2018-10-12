@@ -23,11 +23,7 @@ emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 img = cv2.imread('tensorflow-101/python/bradley_angry.jpg')
 ret = True
 
-	#gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-if ret is True:
-	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-else:
-	continue
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
