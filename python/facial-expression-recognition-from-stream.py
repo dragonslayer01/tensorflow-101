@@ -7,7 +7,7 @@ from keras.preprocessing import image
 
 face_cascade = cv2.CascadeClassifier('tensorflow-101/python/haarcascades/haarcascade_frontalface_default.xml')
 
-cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture(0)
 #-----------------------------
 #face expression recognizer initialization
 from keras.models import model_from_json
@@ -19,14 +19,14 @@ model.load_weights('tensorflow-101/python/facial_expression_model_weights.h5') #
 emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 
 while(True):
-	ret, img = cap.read()
-	#img = cv2.imread('C:/Users/IS96273/Desktop/hababam.jpg')
+	#ret, img = cap.read()
+	img = cv2.imread('tensorflow-101/python/bradley_angry.jpg')
 
-	#gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-	if ret is True:
-   		gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-	else:
-   		continue
+	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	#if ret is True:
+   	#	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	#else:
+   	#	continue
 
 	faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
@@ -63,5 +63,5 @@ while(True):
 		break
 
 #kill open cv things		
-cap.release()
+#cap.release()
 cv2.destroyAllWindows()
