@@ -59,8 +59,8 @@ for (x,y,w,h) in faces:
 	#if cv2.waitKey(1) & 0xFF == ord('q'): #press q to quit
 	#	break
 plt.imshow(img, cmap = 'gray', interpolation = 'bicubic') 
-#plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
-#plt.show()
+plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
+plt.imshow(img)
 
 #kill open cv things		
 #cap.release()
