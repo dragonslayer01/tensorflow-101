@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 from keras.preprocessing import image
+import matplotlib.pyplot as plt
 
 #-----------------------------
 #opencv initialization
