@@ -63,6 +63,7 @@ for (x,y,w,h) in faces:
 #plt.imshow()
 cv2.imshow('img',img)
 print(emotion)
+print(emotions[])
 #kill open cv things		
 #cap.release()
 #cv2.destroyAllWindows()
