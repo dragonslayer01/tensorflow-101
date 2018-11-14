@@ -61,7 +61,7 @@ for (x,y,w,h) in faces:
 #plt.imshow(img, cmap = 'gray', interpolation = 'bicubic') 
 #plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
 #plt.imshow()
-#cv2.imshow('img',img)
+cv2.imshow('img',img)
 print(emotion)
 #kill open cv things		
 #cap.release()
