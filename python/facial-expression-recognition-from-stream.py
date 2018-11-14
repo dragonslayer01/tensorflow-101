@@ -62,8 +62,8 @@ for (x,y,w,h) in faces:
 #plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
 #plt.imshow()
 cv2.imshow('img',img)
-print(emotion)
-print(emotions[])
+print(emotions[0])
+print(emotions[4])
 #kill open cv things		
 #cap.release()
 #cv2.destroyAllWindows()
